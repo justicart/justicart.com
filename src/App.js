@@ -9,11 +9,14 @@ function App() {
 
   return (
     <div className="App">
-      <Canvas>
-        <Suspense fallback={null}>
-          <Spiral4 />
-        </Suspense>
-      </Canvas>
+      <div className="header">
+        <Canvas>
+          <Suspense fallback={null}>
+            <Spiral4 />
+          </Suspense>
+        </Canvas>
+      </div>
+      
       {/* <Social /> */}
     </div>
   );
