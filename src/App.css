@@ -1,7 +1,13 @@
 .App {
   text-align: center;
   height: 100vh;
-  /* background: black url(../public/face.jpg) no-repeat 0 0 /contain; */
+  font-family: "DM Sans";
+  font-optical-sizing: auto;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .App-header {
@@ -22,15 +28,46 @@
 .header {
   height: 100px;
   width: 100%;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: right;
+  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
-.social {
+.contentSection {
+  flex: 1;
   display: flex;
   flex-direction: row;
-  position: absolute;
-  bottom: 0;
-  color: white;
-  width: 100%;
+}
+.face {
+  flex: 1;
+  background: black url(../public/face.jpg) no-repeat 0 0 /contain;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+.bf {
+  width: min(300px, 100vw);
+  height: 37px;
+  background: url(../public/bolt-type.png) no-repeat 0 0 /contain;
+}
+
+.copyright {
+  font-weight: 300;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+.name {
+  width: 100px;
+  height: 70px;
+  margin-left: -20px;
 }
 

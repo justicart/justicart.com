@@ -1,8 +1,5 @@
-import Social from './social.js';
-import Spiral4 from './Spiral4.js';
-import { Canvas } from '@react-three/fiber'
-import { Suspense } from 'react';
 import './App.css';
+import Footer from "./Footer.js";
 
 function App() {
   
@@ -10,14 +7,20 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <Canvas>
-          <Suspense fallback={null}>
-            <Spiral4 />
-          </Suspense>
-        </Canvas>
+        Justin Carter
       </div>
-      
-      {/* <Social /> */}
+      <div className="contentSection">
+        <div className="face"></div>
+        <div className="content">
+          <div className="title">Current project</div>
+          <div className="project">
+            <a href="https://www.boltfoundry.com">
+              <div className="bf"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
