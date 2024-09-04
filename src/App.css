@@ -1,12 +1,12 @@
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100dvh;
   font-family: "DM Sans";
   font-optical-sizing: auto;
   color: white;
   background-color: black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
 }
 
@@ -26,19 +26,20 @@
 }
 
 .header {
-  height: 100px;
   width: 100%;
   font-weight: 600;
   font-size: 24px;
   text-align: right;
-  padding: 20px 40px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
-.contentSection {
-  flex: 1;
+.currentProject {
+  flex: 1 1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .face {
   flex: 1;
@@ -48,8 +49,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .bf {
   width: min(300px, 100vw);
@@ -71,3 +70,11 @@
   margin-left: -20px;
 }
 
+@media screen and (max-width: 600px) {
+  .App {
+    background: black url(../public/face.jpg) no-repeat 0 0 / 50%;
+  }
+  .face {
+    display: none;
+  }
+}
